@@ -18,7 +18,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-black`}>{children}</body>
+      <body className={`${inter.className}`}>
+        {/* Animated background */}
+        <div className="animated-background"></div>
+        
+        {/* Floating shapes */}
+        <div className="floating-shapes">
+          <div className="shape"></div>
+          <div className="shape"></div>
+          <div className="shape"></div>
+          <div className="shape"></div>
+          <div className="shape"></div>
+          <div className="shape"></div>
+        </div>
+        
+        {children}
+      </body>
     </html>
   )
 }
